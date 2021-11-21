@@ -1,39 +1,21 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Series
 {
-    public class SerieRepositorio : IRepositorio<Serie>
-    {
-        private List<Serie> listaSerie = new List<Serie>();
-        public void Atualiza(int id, Serie entidade)
-        {
-            listaSerie[id] = entidade;
-        }
+    public class SerieRepositorio : IRepositorio<Serie> {
+        private IDictionary<int, Serie> _listaSerie = new Dictionary<int, Serie>();
+        public void Atualiza(int id, Serie entidade) => _listaSerie[id] = entidade;
+        
+        public void Exclui(int id) => _listaSerie[id].Excluir();
+        
+        public void Insere(Serie entidade, int id) => _listaSerie.Add(id, entidade);
 
-        public void Exclui(int id)
-        {
-            listaSerie[id].Excluir();
-        }
+        public List<Serie> Lista() => _listaSerie.Values.ToList();
 
-        public void Insere(Serie entidade)
-        {
-            listaSerie.Add(entidade);
-        }
-
-        public List<Serie> Lista()
-        {
-            return listaSerie;
-        }
-
-        public int ProximoId()
-        {
-            return listaSerie.Count;
-        }
-
-        public Serie RetornaPorId(int id)
-        {
-            return listaSerie[id];
-        }
+        public int ProximoId() => _listaSerie.Count;
+        
+        public Serie RetornaPorId(int id) => _listaSerie[id];
     }
 }

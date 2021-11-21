@@ -1,0 +1,15 @@
+C:\Users\Edgar\source\repos\cadastro-series\bin\Debug\net6.0\Series.exe
+C:\Users\Edgar\source\repos\cadastro-series\bin\Debug\net6.0\Series.deps.json
+C:\Users\Edgar\source\repos\cadastro-series\bin\Debug\net6.0\Series.runtimeconfig.json
+C:\Users\Edgar\source\repos\cadastro-series\bin\Debug\net6.0\Series.dll
+C:\Users\Edgar\source\repos\cadastro-series\bin\Debug\net6.0\ref\Series.dll
+C:\Users\Edgar\source\repos\cadastro-series\bin\Debug\net6.0\Series.pdb
+C:\Users\Edgar\source\repos\cadastro-series\obj\Debug\net6.0\Series.csproj.AssemblyReference.cache
+C:\Users\Edgar\source\repos\cadastro-series\obj\Debug\net6.0\Series.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Edgar\source\repos\cadastro-series\obj\Debug\net6.0\Series.AssemblyInfoInputs.cache
+C:\Users\Edgar\source\repos\cadastro-series\obj\Debug\net6.0\Series.AssemblyInfo.cs
+C:\Users\Edgar\source\repos\cadastro-series\obj\Debug\net6.0\Series.csproj.CoreCompileInputs.cache
+C:\Users\Edgar\source\repos\cadastro-series\obj\Debug\net6.0\Series.dll
+C:\Users\Edgar\source\repos\cadastro-series\obj\Debug\net6.0\ref\Series.dll
+C:\Users\Edgar\source\repos\cadastro-series\obj\Debug\net6.0\Series.pdb
+C:\Users\Edgar\source\repos\cadastro-series\obj\Debug\net6.0\Series.genruntimeconfig.cache

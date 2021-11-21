@@ -1,30 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/home/edgar/workspace/DIO/Series/Series.csproj": {}
+    "C:\\Users\\Edgar\\source\\repos\\cadastro-series\\Series.csproj": {}
   },
   "projects": {
-    "/home/edgar/workspace/DIO/Series/Series.csproj": {
+    "C:\\Users\\Edgar\\source\\repos\\cadastro-series\\Series.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/edgar/workspace/DIO/Series/Series.csproj",
+        "projectUniqueName": "C:\\Users\\Edgar\\source\\repos\\cadastro-series\\Series.csproj",
         "projectName": "Series",
-        "projectPath": "/home/edgar/workspace/DIO/Series/Series.csproj",
-        "packagesPath": "/home/edgar/.nuget/packages/",
-        "outputPath": "/home/edgar/workspace/DIO/Series/obj/",
+        "projectPath": "C:\\Users\\Edgar\\source\\repos\\cadastro-series\\Series.csproj",
+        "packagesPath": "C:\\Users\\Edgar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Edgar\\source\\repos\\cadastro-series\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/edgar/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -35,8 +37,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -47,26 +49,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[5.0.12, 5.0.12]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

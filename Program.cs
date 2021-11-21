@@ -5,8 +5,7 @@ namespace Series
     class Program
     {
         static SerieRepositorio repositorio = new SerieRepositorio(); 
-        static void Main(string[] args)
-        {
+        static void Main(string[] args) {
             Serie minhaClasse = new Serie(1, Genero.Terror, "Gustavo lima live in goiania 2018", "Show dahora", 2018);
             
             string opcaoUsuario = ObterOpcaoUsuario();
@@ -33,17 +32,21 @@ namespace Series
                         break;
                     
                 }
+                opcaoUsuario = ObterOpcaoUsuario();
             }
 
             Console.WriteLine(minhaClasse.ToString());
         }
 
-        private static void VisualizarSeries()
-        {
+        private static void VisualizarSeries() {
             Console.WriteLine("Digite o id da série: ");
             int indiceSerie = int.Parse(Console.ReadLine());
+            if (indiceSerie > repositorio.ProximoId() - 1) { 
+                Console.WriteLine("Não existe série com esse ID.");
+                return;
+            }
 
-            var serie = repositorio.RetornaPorId(indiceSerie);
+        var serie = repositorio.RetornaPorId(indiceSerie);
 
             Console.WriteLine(serie);
         }
@@ -106,22 +109,23 @@ namespace Series
                                         titulo: entradaTitulo,
                                         ano: entradaAno,
                                         descricao: entradaDescricao);
-            repositorio.Insere(novaSerie);
+            repositorio.Insere(novaSerie, repositorio.ProximoId());
         }
 
         private static void ListarSeries()
         {
+            
             var lista = repositorio.Lista();
             if(lista.Count == 0){
                 Console.WriteLine("Nenhuma série cadastrada.");
                 return;
             }
             foreach (var serie in lista){
-                var excluido = serie.getExcluido();
+                var excluido = serie.Excluido;
                 if (excluido)
                     continue;
                 
-                Console.WriteLine("#ID {0}: - {1}", serie.getId(), serie.getTitulo());
+                Console.WriteLine("#ID {0}: - {1}", serie.Id, serie.Titulo);
             }
         }
 
